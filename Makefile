@@ -23,7 +23,7 @@ c3:
 		exit 1; \
 	fi
 	@cp .env.c3 .env
-	@npm run build
+	@pnpm run build
 	@echo "✅ c1环境构建完成！"
 
 # 构建c2环境
@@ -34,18 +34,18 @@ c4:
 		exit 1; \
 	fi
 	@cp .env.c4 .env
-	@npm run build
+	@pnpm run build
 	@echo "✅ c2环境构建完成！"
 
 # 启动开发服务器
 dev:
 	@echo "🚀 启动开发服务器..."
-	@npm run dev
+	@pnpm run dev
 
 # 安装依赖
 install:
 	@echo "📦 安装项目依赖..."
-	@npm install
+	@pnpm install
 
 # 清理构建文件
 clean:
