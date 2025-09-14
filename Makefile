@@ -17,25 +17,25 @@ help:
 
 # 构建c1环境
 c3:
-	@echo "🚀 开始构建c1环境..."
+	@echo "🚀 开始构建c3环境..."
 	@if [ ! -f .env.c3 ]; then \
 		echo "❌ 错误: .env.c3 文件不存在"; \
 		exit 1; \
 	fi
 	@cp .env.c3 .env
 	@pnpm run build
-	@echo "✅ c1环境构建完成！"
+	@echo "✅ c3环境构建完成！"
 
 # 构建c2环境
 c4:
-	@echo "🚀 开始构建c2环境..."
+	@echo "🚀 开始构建c4环境..."
 	@if [ ! -f .env.c4 ]; then \
 		echo "❌ 错误: .env.c4 文件不存在"; \
 		exit 1; \
 	fi
 	@cp .env.c4 .env
 	@pnpm run build
-	@echo "✅ c2环境构建完成！"
+	@echo "✅ c4环境构建完成！"
 
 # 启动开发服务器
 dev:

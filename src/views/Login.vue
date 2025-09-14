@@ -50,8 +50,8 @@ const userStore = useUserStore()
 
 const loading = ref(false)
 const form = reactive({
-  username: 'kfadmin',
-  password: 'qqqwww111'
+  username: '',
+  password: ''
 })
 
 const onSubmit = async (values) => {
